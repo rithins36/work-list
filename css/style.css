@@ -177,26 +177,26 @@ img {
 #body.home .header #logo {
 	margin: 15vh auto;
     border-radius: 20px;
-	max-width: 940px;
+	max-width: 800px;
 	background: url(../images/bg-transparent1.png) repeat;
 	/* box-shadow: 5px 10px 18px #888888; */
 	overflow: hidden;
 	padding: 0 10px;	
-	height: 65vh;
+	height: 60vh;
 }
 #body.home .header #logo div{
 	position: relative;
-	margin: 0 10vh;
-	height: 300px;
+	margin: auto;
+	height: 265px;
 	padding: auto;
 }
 #body.home .header #logo div img.ieee25 {
 	display: block;
-	left: 75px;
+	left: 60px;
 	/* margin-left: 30px; */
 	padding: auto;
 	position: absolute;
-	top: 120px;
+	top: 57px;
     min-height: 200px;
 	min-width: 200px;
 	height: 200px;
@@ -209,10 +209,10 @@ img {
 	float: right;
 	margin: 0px; 
 	padding: auto;
-	right: 65px;
-	top: 80px;
+	right: 0px;
+	top: 5px;
 	position: absolute;
-	width: 400px;
+	width: 600px;
 	height: 300px;
 	z-index: 60;
 }
@@ -227,12 +227,12 @@ img {
 	line-height: 43px;
 	margin: auto;
 	margin-top: 2px;
-	padding: auto;	
-	top: 300px;
+	padding: auto;
+	padding-left: 10px;	
+	top: 250px;
 	left: 65px;
 	position: absolute;
 	text-align: center;
-	/* text-transform: uppercase; */
 	width : fit-content;
 	z-index: 60;
 }
@@ -247,8 +247,7 @@ img {
 	height: 49px;
 	line-height: 49px;
 	margin: auto;
-	margin-top: 20px;
-	padding: 0;
+	padding: 0;	
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
