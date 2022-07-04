@@ -27,8 +27,14 @@
 		width: 95%;
 	}
 	#body.home .header #logo{
-		max-width: 600px;
-		height: 480px;;
+		max-width: 100vh;
+		height: 55vh;
+		margin: 15vh 5px;
+		padding: 0;
+		margin-left: 10px;
+
+	
+
 	}
 	#body.home .header #logo div {
 		padding: 0;
