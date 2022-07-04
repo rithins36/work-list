@@ -1,3 +1,13 @@
+#contact_body
+{
+    background-color: rgba(0,0,0,0.75);
+	margin: 0;
+	min-height: 808px;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+
 .contact_list {
     margin:2em;
     height:100%;
@@ -11,6 +21,7 @@
 
 .card
 {
+    /*
     width:40%;
     height:7rem;
     background-color: #282828;
@@ -26,6 +37,26 @@
     color: #fff;
     border-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    ------------------------------------------------------------------------------------*/
+    width:40%;
+    height:7rem;
+    margin:2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.8;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 1em;
+    min-width: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    /*-------------------------------------*/
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
 }
 
@@ -35,9 +66,16 @@
 
 .two, .three
 {
-    color:rgba(255,255,255,0.4)
+    color:rgba(255,255,255,0.6)
 }
 .one
 {
     font-size: x-large;
 }
+
+.contact_heading
+{
+    color:#fff;
+    font-family: audiowide-regular-webfont;
+}
+
