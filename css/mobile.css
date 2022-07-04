@@ -26,8 +26,55 @@
 		position: relative;
 		width: 95%;
 	}
-	#body.home .header div img.satellite{
-		left: 2px;
+	#body.home .header #logo{
+		max-width: 600px;
+		height: 480px;;
+	}
+	#body.home .header #logo div {
+		padding: 0;
+		height: 450px;
+		position: fixed;
+	}
+	#body.home .header #logo div img.ieee25 {
+		display: block;
+		justify-content: center;
+		margin: 0px auto;
+		padding: 0;
+		position: relative;
+		float: none;
+		left: 0;
+		top: 30px;
+		
+		min-height: 100px;
+		min-width: 100px;
+		height: 100px;
+	}
+	#body.home .header #logo div img.mvp {
+		display: block;
+		justify-content: center;
+		margin: 0px auto;
+		
+		padding: 0;
+		
+		position: relative;
+		float: none;
+		top: 4px;		
+		width: 600px;
+		height: 200px;
+	}
+	#body.home .header #logo div h2 {
+		font-size: 22px;
+		display: block;
+		justify-content: center;
+		margin: 0px auto;
+		
+		padding: 0;
+
+		position: relative;
+		float: none;
+		top: 0px;	
+		left: 0;
+
 	}
 	#body.home .header div h1 {
 		float: none;
@@ -46,7 +93,9 @@
 	#body.home .header div a.more{
 		float: none;
 		margin: 0 auto;
-		z-index: 55;
+		display: block;
+		top: 400px;
+		/* z-index: 55; */
 	}
 	#body.home .header div h3{
 		margin: 106px 0 0;
@@ -208,29 +257,29 @@
 		padding: 0;
 		width: auto;
 	}
-	#header {
+	#navbar {
 		min-height: 73px;
 		width: 100%;
 	}
-	#header div {
+	#navbar div {
 		margin: 0 auto;
 		max-width: none;
-		min-height: 105px;
+		min-height: 95px;
 		width: 95%;
 	}
-	#header div a.logo {
+	#navbar div a.logo {
 		display: block;
 		float: left;
-		height: 60px;
-		margin: 5% 0 0;
-		padding: 0;
+		height: 50px;
+		margin: 15px 0 0 0 ;
+		padding: 5px;
 		width: 79%;
 	}
-	#header div span#mobile-navigation {
+	#navbar div span#mobile-navigation {
 		background: transparent url(../images/mobile/mobile-menu.png) no-repeat;
 		display: block;
 		height: 50px;
-		margin: 0;
+		margin: 6px 0 0 0;
 		padding: 0 0 0 0;
 		position: absolute;
 		right: 3%;
@@ -238,7 +287,7 @@
 		width: 50px;
 		z-index: 999;
 	}
-	#header div > ul#navigation {
+	#navbar div > ul#navigation {
 		background-image: none;
 		background: rgba(98, 0, 49, 0.91);
 		border: 1px solid #f1f2f2;
@@ -253,7 +302,7 @@
 		width: 92%;
 		z-index: 1000;
 	}
-	#header div > ul#navigation > li {
+	#navbar div > ul#navigation > li {
 		border-left: 0;
 		border-top: 1px solid #f1f2f2;
 		margin: 0;
@@ -263,13 +312,13 @@
 		text-align: left;
 		width: 100%;
 	}
-	#header div > ul#navigation > li:first-child {
+	#navbar div > ul#navigation > li:first-child {
 		border-top: 0;
 	}
-	#header div > ul#navigation > li:hover {
+	#navbar div > ul#navigation > li:hover {
 		background-color: transparent;
 	}
-	#header div ul#navigation li a {
+	#navbar div ul#navigation li a {
 		border: none;
 		color: #eeeced;
 		display: block;
@@ -285,7 +334,7 @@
 		text-shadow: none;
 		width: auto;
 	}
-	#header div .mobile-submenu {
+	#navbar div .mobile-submenu {
 		background: rgba(98, 0, 49, 0.91) url(../images/mobile/mobile-expand.png) no-repeat center;
 		border-left: 1px solid #f1f2f2;
 		display: inline-block;
@@ -296,7 +345,7 @@
 		width: 50px;
 		z-index: 0;
 	}
-	#header div ul#navigation li ul {
+	#navbar div ul#navigation li ul {
 		background: none;
 		border-top: 1px solid #f1f2f2;
 		padding: 0;
@@ -306,15 +355,15 @@
 		width: 100%;
 		z-index: 999;
 	}
-	#header div ul#navigation li ul, #header div ul#navigation li:hover ul {
+	#navbar div ul#navigation li ul, #navbar div ul#navigation li:hover ul {
 		display: none;
 	}
-	#header div ul#navigation li {
+	#navbar div ul#navigation li {
 		height: auto;
 		width: 100%;
 		z-index: 40;
 	}
-	#header div ul#navigation li ul li {
+	#navbar div ul#navigation li ul li {
 		background: rgba(98, 0, 49, 0.91);
 		border-top: 1px solid #f1f2f2;
 		display: block;
@@ -324,10 +373,10 @@
 		text-align: left;
 		width: 100%;
 	}
-	#header div ul#navigation li ul li:first-child {
+	#navbar div ul#navigation li ul li:first-child {
 		border: none;
 	}
-	#header div ul#navigation li ul li a {
+	#navbar div ul#navigation li ul li a {
 		background: rgba(98, 0, 49, 0.91);
 		color: #eeeced;
 		padding-left: 20px;
@@ -335,15 +384,15 @@
 		text-decoration: none;
 		width: auto;
 	}
-	#header div ul#navigation li:hover a, #header div ul#navigation li.selected a, #header div ul#navigation li:hover ul li a, #header div ul#navigation li:hover ul li a:hover, #header div ul#navigation li ul li.selected a {
+	#navbar div ul#navigation li:hover a, #navbar div ul#navigation li.selected a, #navbar div ul#navigation li:hover ul li a, #navbar div ul#navigation li:hover ul li a:hover, #navbar div ul#navigation li ul li.selected a {
 		display: block;
 	}
-	#header div ul#navigation li.selected > a {
+	#navbar div ul#navigation li.selected > a {
 		background: rgba(0, 0, 0, 0.91);
 		color: #eeeced;
 		text-decoration: none;
 	}
-	#header div ul li.selected a, #header div ul li.selected a:hover, #header div ul li.menu ul#selected li.selected a {
+	#navbar div ul li.selected a, #navbar div ul li.selected a:hover, #navbar div ul li.menu ul#selected li.selected a {
 		color: #eeeced;
 		text-decoration: none;
 	}
