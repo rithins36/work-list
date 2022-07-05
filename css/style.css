@@ -549,8 +549,18 @@ img {
 }
 /*----------------------------------------body-styles---------------------------------------*/
 /* ------------------------------------------About Page-----------------------------------------  */
-#body.about .header {
-	background: url(../images/bg-about.jpg) no-repeat center top #000000;
+#body.about {
+	background: none;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+    justify-content: center;
+	min-height: calc(100vh - 65px);
+}
+
+
+/* #body.about .header {
+	background: url("../img/5039684.jpg") no-repeat scroll center top #000000;
 	margin: 0;
 	min-height: 455px;
 	padding: 0;
@@ -612,18 +622,18 @@ img {
 }
 #body.about .header div p a:hover {
 	color: #a3a3a3;
-}
+} */
 #body.about .body {
-	background-color: #620031;
+	background: none;
 	margin: 0;
 	min-height: 253px;
 	overflow: hidden;
 	padding: 0;
-	width: 100%;
+
 }
 #body.about .body div {
 	margin: 0 auto;
-	max-width: 940px;
+	max-width: min-content;
 	overflow: hidden;
 	padding: 36px 10px 35px;
 }
@@ -653,19 +663,6 @@ img {
 	text-align: left;
 	width: 620px;
 }
-#body.about .body div p a {
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 24px;
-	margin: 0;
-	padding: 0;
-	text-decoration: underline;
-}
-#body.about .body div p a:hover {
-	color: #a3a3a3;
-}
 #body.about .body div img {
 	display: block;
 	float: right;
@@ -673,8 +670,8 @@ img {
 	padding: 0;
 	width: auto;
 }
-#body.about .footer {
-	background-color: #000000;
+/* #body.about .footer {
+	background: none;
 	margin: 0;
 	min-height: 366px;
 	padding: 0;
@@ -782,7 +779,7 @@ img {
 }
 #body.about .section div p a:hover {
 	color: #a3a3a3;
-}
+} */
 #body .header {
 	margin: 0 auto;
 	padding: 0;
