@@ -709,6 +709,7 @@ img {
 }
 #body.about .body div .icon-row .icon{
 	display: block;
+        color: #FFFFFF;
 }
 #body.about .body div .icon-row .icon h1{
 	font-family: audiowide-regular-webfont;
