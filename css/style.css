@@ -713,10 +713,12 @@ img {
 #body.about .body div .icon-row .icon h1{
 	font-family: audiowide-regular-webfont;
 	font-size: 30px;
+        color: #FFFFFF;
 }
 #body.about .body div .icon-row .icon h5{
 	font-size: 16px;
 	font-weight: normal;
+        color: #FFFFFF;
 }
 
 
