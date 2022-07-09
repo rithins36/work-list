@@ -6,17 +6,12 @@ body {
 	width: auto;
 }
 body #page {
-	background: url("../img/5039684.jpg") no-repeat scroll center top #000000;
-	background-size:cover;
+	background: url("../images/bg-home.jpg") no-repeat scroll center top #000000;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
 	width: auto;
 	z-index: 3;
-	/* height: 100vh; -------------------------Changes needed -----------------------------*/
-}
-.index{
-	height: 100vh;
 }
 a {
 	text-decoration: none;
@@ -35,20 +30,20 @@ img {
 	src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
 }
 /*----------------------------------------header-styles---------------------------------------*/
-#navbar {
+#header {
 	background: url(../images/bg-transparent1.png) repeat;
 	margin: 0;
 	min-height: 60px;
 	padding: 0;
 	width: auto;
 }
-#navbar div {
+#header div {
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 60px;
 	padding: 0 10px;
 }
-#navbar div a.logo {
+#header div a.logo {
 	display: block;
 	float: left;
 	height: 60px;
@@ -56,29 +51,27 @@ img {
 	padding: 0;
 	width: 304px;
 }
-#navbar div a img {
+#header div a img {
 	display: block;
 	margin: 0;
-	padding: 3px auto;
-	width: 100%; /* or any custom size */
-    height: 100%; 
-    object-fit:contain;
+	padding: 0;
+	width: auto;
 }
-#navbar div ul {
+#header div ul {
 	display: inline-block;
-	/* float: left; */
+	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	width: auto;
 }
-#navbar div ul li {
+#header div ul li {
 	float: left;
 	margin: 0;
 	padding: 0;
 	width: auto;
 }
-#navbar div ul li a {
+#header div ul li a {
 	color: #ffffff;
 	display: block;
 	font-family: Arial;
@@ -88,23 +81,23 @@ img {
 	margin: 0;
 	min-height: 60px;
 	padding: 0 24px;
- *padding: 0 23px; 
+ *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
 	text-transform: uppercase;
 	width: auto;
 }
-#navbar div ul li a:hover {
+#header div ul li a:hover {
 	background-color: #620031;
 	color: #ffffff;
 }
-#navbar div ul li.selected a {
+#header div ul li.selected a {
 	background-color: #000000;
 	color: #a3a3a3;
 }
-#navbar div ul li.menu {
+#header div ul li.menu {
 	position: relative;
 }
-#navbar div ul li.menu ul {
+#header div ul li.menu ul {
 	display: block;
 	left: -99999px;
 	list-style: none;
@@ -115,24 +108,24 @@ img {
 	width: 142px;
 	z-index: 50;
 }
-#navbar div ul li.menu:hover ul.primary {
+#header div ul li.menu:hover ul.primary {
 	left: 31px;
 }
-#navbar div ul li.menu ul.primary.selected {
+#header div ul li.menu ul.primary.selected {
 	left: 31px;
 }
-#navbar div ul li.menu:hover ul.secondary {
+#header div ul li.menu:hover ul.secondary {
 	left: -20px;
 }
-#navbar div ul li.menu ul.secondary.selected {
+#header div ul li.menu ul.secondary.selected {
 	left: -20px;
 }
-#navbar div ul li.menu ul li {
+#header div ul li.menu ul li {
 	margin: 0;
 	padding: 0;
 	width: auto;
 }
-#navbar div ul li.menu ul li a {
+#header div ul li.menu ul li a {
 	background-color: #620031;
 	color: #ffffff;
 	display: block;
@@ -147,13 +140,13 @@ img {
 	text-transform: uppercase;
 	width: auto;
 }
-#navbar div ul li.menu ul.primary.selected li a, #header div ul li.menu ul.secondary.selected li a {
+#header div ul li.menu ul.primary.selected li a, #header div ul li.menu ul.secondary.selected li a {
 	background-color: #000000;
 	color: #a3a3a3;
 }
 /*----------------------------------------body-home-styles---------------------------------------*/
 #body {
-	background-color: rgba(0,0,0,0.75);
+	background-color: #000000;
 	margin: 0;
 	min-height: 808px;
 	overflow: hidden;
@@ -164,13 +157,9 @@ img {
 	background: none;
 	margin: 0;
 	min-height: 1308px;
-	position: relative;
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
-}
-#body .task{
-	min-height: 1308px;
 }
 #body.home .header {
 	background: none;
@@ -178,120 +167,79 @@ img {
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
-	height: 80vh;
 }
-#body .header div {
+#body.home .header div {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 940px;
 	overflow: hidden;
-	padding: 65px 0 40px;
+	padding: 0 10px;
+	position: relative;
 }
-#body .header div h1 {
+#body.home .header div img.satellite {
+	display: block;
+	left: 10px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 41px;
+	width: auto;
+	z-index: 50;
+}
+#body.home .header div h1 {
 	color: #FFFFFF;
 	display: block;
+	float: right;
 	font-family: audiowide-regular-webfont;
-	font-size: 36px;
+	font-size: 60px;
 	font-weight: normal;
-	line-height: 36px;
-	margin: 0 auto 87px;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
-	width: 940px;
-}
-/* #body .full{
-	background-color: rgba(0,0,0,0.75);
-} */
-#body.home .header #logo {
-	margin: 15vh auto;
-    border-radius: 20px;
-	max-width: 800px;
-	background-color: rgba(0,0,0,0.70);
-	/* background: url(../images/bg-transparent1.png) repeat; */
-	/* box-shadow: 5px 10px 18px #888888; */
-	overflow: hidden;
-	padding: 0 10px;	
-	height: 60vh;
-}
-#body.home .header #logo div{
+	line-height: 60px;
+	margin: 187px 0 27px;
+	padding: 0 38px 0 399px;
 	position: relative;
-	margin: auto;
-	height: 265px;
-	padding: auto;
+	text-align: right;
+	text-transform: uppercase;
+	width: 503px;
+	z-index: 60;
 }
-#body.home .header #logo div img.ieee25 {
-	display: block;
-	left: 60px;
-	/* margin-left: 30px; */
-	padding: auto;
-	position: absolute;
-	top: 57px;
-    min-height: 200px;
-	min-width: 200px;
-	height: 200px;
-	/* z-index: 50; */
-	
-}
-
-#body.home .header #logo div img.mvp {
+#body.home .header div h2 {
+	color: #FFFFFF;
 	display: block;
 	float: right;
-	margin: 0px; 
-	padding: auto;
-	right: 0px;
-	top: 5px;
-	position: absolute;
-	width: 600px;
-	height: 300px;
-	/* z-index: 60; */
-}
-#body.home .header #logo div h2 {
-	color:rgb(195, 187, 187);
-	/* display: block; */
-	display: flex;
-	position: absolute;
-	justify-content: center;
 	font-family: Arial;
-	font-size: 34px;
+	font-size: 43px;
 	font-weight: normal;
 	line-height: 43px;
-	margin: auto;
-	margin-top: 2px;
-	padding: auto;
-	padding-left: 10px;	
-	top: 250px;
-	left: 65px;
-	position: absolute;
-	text-align: center;
-	width : fit-content;
-	/* z-index: 60; */
+	margin: 0 0 36px;
+	padding: 0 146px 0 506px;
+	position: relative;
+	text-align: right;
+	text-transform: uppercase;
+	width: 288px;
+	z-index: 60;
 }
 #body.home .header div a.more {
-	background-color: #5a5353;
+	background-color: #000000;
 	color: #a3a3a3;
-	display: flex;
-	position: absolute;
-	justify-content: center;
+	display: block;
+	float: right;
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: normal;
 	height: 49px;
 	line-height: 49px;
-	margin: auto;
-	top: 2px;
-	/* margin-top: 15px; */
-	padding: 0;	
+	margin: 0 200px 0 0;
+	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
 	width: 180px;
-	/* z-index: 55; */
+	z-index: 55;
 }
 #body.home .header div a.more:hover {
 	background-color: #ab000b;
 	color: #ffffff;
 }
-/* #body.home .header div h3 {
+#body.home .header div h3 {
 	background: url("../images/bg-transparent1.png") repeat;
 	color: #A3A3A3;
 	float: left;
@@ -300,7 +248,7 @@ img {
 	font-weight: normal;
 	line-height: 23px;
 	margin: 96px 0 0;
- *margin: 102px 0 0;
+ *margin: 102px 0 0;/* Needed for IE8 and old versions */
 	min-height: 27px;
 	padding: 17px 0 10px;
 	position: relative;
@@ -336,7 +284,7 @@ img {
 }
 #body.home .header div ul li a img {
 	cursor: pointer;
-	filter: alpha(opacity=100);
+	filter: alpha(opacity=100);/* Needed for IE8 and old versions */
 	opacity: 1.0;
 	display: block;
 	margin: 0;
@@ -344,9 +292,9 @@ img {
 	width: auto;
 }
 #body.home .header div ul li a img:hover {
-	filter: alpha(opacity=70);
+	filter: alpha(opacity=70);/* Needed for IE8 and old versions */
 	opacity: 0.7;
-} */
+}
 #body.home .body {
 	background-color: #630031;
 	margin: 0;
@@ -454,7 +402,7 @@ img {
 }
 #body.home .footer div ul li a img {
 	cursor: pointer;
-	filter: alpha(opacity=100);
+	filter: alpha(opacity=100);/* Needed for IE8 and old versions */
 	opacity: 1.0;
 	display: block;
 	margin: 0;
@@ -462,7 +410,7 @@ img {
 	width: auto;
 }
 #body.home .footer div ul li a:hover img {
-	filter: alpha(opacity=70);
+	filter: alpha(opacity=70);/* Needed for IE8 and old versions */
 	opacity: 0.7;
 }
 #body.home .footer div ul li a span {
@@ -511,7 +459,7 @@ img {
 }
 #body.home .footer div ul li ul li a img {
 	cursor: pointer;
-	filter: alpha(opacity=100);
+	filter: alpha(opacity=100);/* Needed for IE8 and old versions */
 	opacity: 1.0;
 	display: block;
 	margin: 0;
@@ -519,7 +467,7 @@ img {
 	width: auto;
 }
 #body.home .footer div ul li ul li a img:hover {
-	filter: alpha(opacity=70);
+	filter: alpha(opacity=70);/* Needed for IE8 and old versions */
 	opacity: 0.7;
 }
 #body.home .footer div ul li ul li h1 {
@@ -569,16 +517,20 @@ img {
 	background-color: #620031;
 }
 /*----------------------------------------body-styles---------------------------------------*/
-/* ------------------------------------------About Page-----------------------------------------  */
-
-/* #body.about .header {
-	background: url("../img/5039684.jpg") no-repeat scroll center top #000000;
+#body.about .header {
+	background: url(../images/bg-about.jpg) no-repeat center top #000000;
 	margin: 0;
 	min-height: 455px;
 	padding: 0;
 	width: 100%;
-} */
-/* #body.about .header div h1, #body .header div h1 {
+}
+#body.about .header div, #body .header div {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+	padding: 65px 0 40px;
+}
+#body.about .header div h1, #body .header div h1 {
 	color: #FFFFFF;
 	display: block;
 	font-family: audiowide-regular-webfont;
@@ -590,8 +542,8 @@ img {
 	text-align: center;
 	text-transform: uppercase;
 	width: 940px;
-} */
-/* #body.about .header div h2 {
+}
+#body.about .header div h2 {
 	color: #FFFFFF;
 	display: block;
 	font-family: audiowide-regular-webfont;
@@ -628,48 +580,38 @@ img {
 }
 #body.about .header div p a:hover {
 	color: #a3a3a3;
-} */
-#body.about {
-	background: none;
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-    justify-content: flex-start;
-	min-height: 100vh;
 }
-
 #body.about .body {
-	background: none;
+	background-color: #620031;
 	margin: 0;
-	margin-top: 3%;
 	min-height: 253px;
 	overflow: hidden;
 	padding: 0;
-
+	width: 100%;
 }
 #body.about .body div {
 	margin: 0 auto;
-	max-width: min-content;
+	max-width: 940px;
 	overflow: hidden;
 	padding: 36px 10px 35px;
 }
 #body.about .body div h2 {
 	color: #A3A3A3;
-	position: relative;
+	float: left;
 	font-family: audiowide-regular-webfont;
-	font-size: 30px;
+	font-size: 23px;
 	font-weight: normal;
-	line-height: 40px;
+	line-height: 23px;
 	margin: 18px 0 26px;
 	padding: 0;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
-	/* text-decoration: underline; */
 	width: 620px;
 }
 #body.about .body div p {
 	color: #ffffff;
 	display: block;
+	float: left;
 	font-family: Arial;
 	font-size: 14px;
 	font-weight: normal;
@@ -679,60 +621,28 @@ img {
 	text-align: left;
 	width: 620px;
 }
-#body.about .body div .dates {
-	display: flex;
-	flex-direction: column	;
-	margin: 20;
-	padding: 0;
-	width: min-content;
-}
-#body.about .body div .dates h3 span {
-	display: inline-block;
-	background: -webkit-linear-gradient(#9c27b0 23.6%, #00bcd4 93.6%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-#body.about .body div .dates h3 {
-	display: inline-block;
-	color: #A3A3A3;
-	font-family: audiowide-regular-webfont;
-	font-size: 20px;
+#body.about .body div p a {
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 14px;
 	font-weight: normal;
-	margin-top: 10;
+	line-height: 24px;
+	margin: 0;
 	padding: 0;
-	text-align: left;
-	text-transform: uppercase;
-	width: 620px;
+	text-decoration: underline;
 }
-#body.about .body div .icon-row{
-	display: flex;
-	justify-content: space-around;
-	column-gap: 80px;
-	text-align: center;
+#body.about .body div p a:hover {
+	color: #a3a3a3;
 }
-#body.about .body div .icon-row .icon{
+#body.about .body div img {
 	display: block;
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: auto;
 }
-#body.about .body div .icon-row .icon h1{
-	font-family: audiowide-regular-webfont;
-	font-size: 30px;
-        color: #FFFFFF;
-}
-#body.about .body div .icon-row .icon h5{
-	font-size: 16px;
-	font-weight: normal;
-        color: #FFFFFF;
-}
-
-
-@media only screen and (max-width: 600px) {
-	#body.about .body div .icon-row{
-		display: flex;
-		flex-direction: column;
-	}
-  }
-/* #body.about .footer {
-	background: none;
+#body.about .footer {
+	background-color: #000000;
 	margin: 0;
 	min-height: 366px;
 	padding: 0;
@@ -840,7 +750,7 @@ img {
 }
 #body.about .section div p a:hover {
 	color: #a3a3a3;
-} */
+}
 #body .header {
 	margin: 0 auto;
 	padding: 0;
@@ -874,7 +784,7 @@ img {
 }
 #body .header div ul li a img {
 	cursor: pointer;
-	filter: alpha(opacity=100);
+	filter: alpha(opacity=100);/* Needed for IE8 and old versions */
 	opacity: 1.0;
 	display: block;
 	margin: 0;
@@ -882,7 +792,7 @@ img {
 	width: auto;
 }
 #body .header div ul li a img:hover {
-	filter: alpha(opacity=70);
+	filter: alpha(opacity=70);/* Needed for IE8 and old versions */
 	opacity: 0.7;
 }
 #body .header div ul li div {
@@ -966,7 +876,8 @@ img {
 	line-height: 23px;
 	margin: 0 auto;
 	padding: 53px 0 27px;
-	text-align: center;
+	text-align: left;
+	line-height: 2em;
 	text-transform: uppercase;
 	width: 780px;
 }
@@ -1028,7 +939,7 @@ img {
 }
 #body .header div .article ul li a img {
 	cursor: pointer;
-	filter: alpha(opacity=100);
+	filter: alpha(opacity=100);/* Needed for IE8 and old versions */
 	opacity: 1.0;
 	display: block;
 	margin: 0;
@@ -1036,7 +947,7 @@ img {
 	width: auto;
 }
 #body .header div .article ul li a img:hover {
-	filter: alpha(opacity=70);
+	filter: alpha(opacity=70);/* Needed for IE8 and old versions */
 	opacity: 0.7;
 }
 #body .header div .article ul li h1 {
@@ -1157,7 +1068,7 @@ img {
 }
 #body .header div .sidebar ul li a img {
 	cursor: pointer;
-	filter: alpha(opacity=100);
+	filter: alpha(opacity=100);/* Needed for IE8 and old versions */
 	opacity: 1.0;
 	display: block;
 	margin: 0;
@@ -1165,7 +1076,7 @@ img {
 	width: auto;
 }
 #body .header div .sidebar ul li a img:hover {
-	filter: alpha(opacity=70);
+	filter: alpha(opacity=70);/* Needed for IE8 and old versions */
 	opacity: 0.7;
 }
 #body .header div .sidebar ul li h2 {
@@ -1220,7 +1131,7 @@ img {
 }
 #body .header div .sidebar ul li ul li a img {
 	cursor: pointer;
-	filter: alpha(opacity=100);
+	filter: alpha(opacity=100);/* Needed for IE8 and old versions */
 	opacity: 1.0;
 	display: block;
 	margin: 0;
@@ -1228,7 +1139,7 @@ img {
 	width: auto;
 }
 #body .header div .sidebar ul li ul li a img:hover {
-	filter: alpha(opacity=70);
+	filter: alpha(opacity=70);/* Needed for IE8 and old versions */
 	opacity: 0.7;
 }
 #body .header div .sidebar ul li ul li h2 {
@@ -1389,10 +1300,9 @@ img {
 #footer {
 	margin: 0;
 	padding: 0;
-
 	width: auto;
 }
-/* #footer .connect {
+#footer .connect {
 	background-color: #a3a3a3;
 	margin: 0;
 	min-height: 84px;
@@ -1467,10 +1377,10 @@ img {
 }
 #footer .connect div div a.pinterest:hover {
 	background-position: -32px -76px;
-} */
+}
 #footer .footnote {
-	background-color: #e3d7d7;
-	margin: 194px 0 0 0;
+	background-color: #FFFFFF;
+	margin: 0;
 	min-height: 84px;
 	overflow: hidden;
 	padding: 0;
