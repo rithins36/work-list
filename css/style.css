@@ -28,6 +28,24 @@ a:active {
 img {
 	border: none;
 }
+
+
+/*--------------------------------------new change in task page---------------------------------*/
+#wrapper{
+	display: flex;
+   align-items: center;
+   
+   justify-content: center;
+   
+   margin: auto;
+   height: 100vh;
+   
+
+}
+#wrapper h2{
+	font-size: 100%;
+	
+}
 /*-------------------------------------------FONTS---------------------------------------------*/
 @font-face {
 	font-family: 'audiowide-regular-webfont';
