@@ -1,6 +1,10 @@
 /* Website template by freewebsitetemplates.com */
 @media only screen and (min-width : 320px) and (max-width : 568px) {
-	
+	#body.about .body div .icon-row{
+		display: flex;
+		flex-direction: column;
+		;
+	}
 }
 @media only screen and (max-width : 568px) and (orientation : landscape) {
 	
