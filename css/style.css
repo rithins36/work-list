@@ -216,8 +216,8 @@ img {
 }
 #body.home .header #logo div{
 	position: relative;
-	margin: auto;
-	margin-top: 15px;
+	/* margin: auto; */
+	/* margin-top: 15px; */
 	height: 50vh;
 	padding: 20px;
 }
