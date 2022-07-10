@@ -41,26 +41,27 @@ img {
 	min-height: 60px;
 	padding: 0;
 	width: auto;
+	/* transition: ease-in-out 0.3s; */
 }
 #navbar div {
-	margin: 0 auto;
-	max-width: 940px;
+	margin: 0px auto;
+	max-width: fit-content;
 	min-height: 60px;
 	padding: 0 10px;
+	
 }
 #navbar div a.logo {
-	display: block;
-	float: left;
+	display:inline-block ;	
 	height: 60px;
-	margin: 0 44px 0 0;
+	margin: 0 10px 0 0;
 	padding: 0;
 	width: 304px;
 }
 #navbar div a img {
-	display: block;
+	display: inline-block;
 	margin: 0;
 	padding: 3px auto;
-	width: 100%; /* or any custom size */
+	width: auto; /* or any custom size */
     height: 100%; 
     object-fit:contain;
 }
@@ -82,7 +83,7 @@ img {
 	color: #ffffff;
 	display: block;
 	font-family: Arial;
-	font-size: 18px;
+	font-size: 0.8rem;
 	font-weight: normal;
 	line-height: 59px;
 	margin: 0;
@@ -216,8 +217,9 @@ img {
 #body.home .header #logo div{
 	position: relative;
 	margin: auto;
-	height: 265px;
-	padding: auto;
+	margin-top: 15px;
+	height: 50vh;
+	padding: 20px;
 }
 #body.home .header #logo div img.ieee25 {
 	display: block;
@@ -278,7 +280,7 @@ img {
 	height: 49px;
 	line-height: 49px;
 	margin: auto;
-	top: 2px;
+	top: 360px;
 	/* margin-top: 15px; */
 	padding: 0;	
 	text-align: center;
