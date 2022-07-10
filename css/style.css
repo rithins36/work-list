@@ -651,6 +651,7 @@ img {
 } */
 #body.about {
 	background: none;
+	background-color: rgba(0,0,0,0.75);
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -669,7 +670,7 @@ img {
 }
 #body.about .body div {
 	margin: 0 auto;
-	max-width: min-content;
+	max-width: max-content;
 	overflow: hidden;
 	padding: 36px 10px 35px;
 }
@@ -677,10 +678,11 @@ img {
 	color: #A3A3A3;
 	position: relative;
 	font-family: audiowide-regular-webfont;
-	font-size: 30px;
+	font-size: 34px;
 	font-weight: normal;
 	line-height: 40px;
-	margin: 18px 0 26px;
+	margin: auto;
+	margin-bottom: 20px;
 	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
@@ -691,24 +693,24 @@ img {
 	color: #ffffff;
 	display: block;
 	font-family: Arial;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: normal;
 	line-height: 24px;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 px 0;
 	text-align: left;
-	width: 620px;
+	width: 770px;
 }
 #body.about .body div .dates {
 	display: flex;
-	flex-direction: column	;
-	margin: 20;
+	flex-direction: column;
+	margin: 20px 0 0;
 	padding: 0;
 	width: min-content;
 }
 #body.about .body div .dates h3 span {
 	display: inline-block;
-	background: -webkit-linear-gradient(#9c27b0 23.6%, #00bcd4 93.6%);
+	background: linear-gradient(#9c27b0 23.6%, #00bcd4 93.6%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -716,41 +718,40 @@ img {
 	display: inline-block;
 	color: #A3A3A3;
 	font-family: audiowide-regular-webfont;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: normal;
 	margin-top: 10;
 	padding: 0;
 	text-align: left;
 	text-transform: uppercase;
-	width: 620px;
+	width: 670px;
 }
 #body.about .body div .icon-row{
 	display: flex;
-	justify-content: space-around;
-	column-gap: 80px;
+	justify-content: start;
+	column-gap: 90px;
 	text-align: center;
 }
 #body.about .body div .icon-row .icon{
 	display: block;
+	padding: 20px;
 }
 #body.about .body div .icon-row .icon h1{
 	font-family: audiowide-regular-webfont;
-	font-size: 30px;
-        color: #FFFFFF;
+	font-size: 34px;
+    color: #FFFFFF;
+	margin: 10px
 }
 #body.about .body div .icon-row .icon h5{
-	font-size: 16px;
-	font-weight: normal;
-        color: #FFFFFF;
+	font-family: audiowide-regular-webfont;
+	font-size: 14px;
+    color: #FFFFFF;
+	margin: 10px
 }
 
 
-@media only screen and (max-width: 600px) {
-	#body.about .body div .icon-row{
-		display: flex;
-		flex-direction: column;
-	}
-  }
+/* @media only screen and (max-width: 600px) {
+} */
 /* #body.about .footer {
 	background: none;
 	margin: 0;
