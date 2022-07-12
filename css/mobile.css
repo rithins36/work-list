@@ -32,23 +32,22 @@
 	}
 	#body.home .header #logo{
 		max-width: 100vh;
-		height: 55vh;
-		margin: 15vh auto;
+		width: 91%;
+		height: 45vh;
+		margin: 20vh auto 15vh auto;		
 		padding: 0;
 	}
 	#body.home .header #logo div {
-		padding: 10px;
-		
+		padding: 10px;		
 		height: 60vh;
 		position: relative;
 	}
 	#body.home .header #logo div img.ieee25 {
 		display: block;
 		justify-content: center;
-		margin: 0px auto;		
+		margin: 10px auto;		
 		padding: 0 ;
 		position: absolute;
-		/* top: 50%; */
 		left: 50%;
 		transform: translate(-50%);
 		top: 0;
@@ -59,8 +58,8 @@
 	#body.home .header #logo div img.mvp {
 		display: block;
 		justify-content: center;
-		margin: 0px auto;
-		margin-top: 2px;
+		margin: 10px auto;
+		/* margin-top: 2px; */
 		padding: 0;		
 		position: absolute;
 		left: 50%;
@@ -75,26 +74,21 @@
 		display: block;
 		text-align: center;
 		justify-content: center;
-		margin: 0px auto;
-		margin-top: 2px;
+		margin: 10px auto;		
 		padding: 0;
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%);
 		float: none;
-		top: 45%;	
-	
+		top: 45%;		
 	}
 
-	#body.home .header div a.more{
-		float: none;
-		margin: 0 auto;
-		display: block;
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%);
-		top: 65%;
-		/* z-index: 55; */
+	.credits{
+		text-align: center;
+		padding: 10px;
+		margin: 0;
+		background: rgba(0, 0, 0, 0.70);
+		font-size: 1.1em;
 	}
 	#body.home .header div h3{
 		margin: 106px 0 0;
@@ -263,22 +257,22 @@
 	#navbar div {
 		margin: 0 auto;
 		max-width: none;
-		min-height: 95px;
+		min-height: 60px;
 		width: 95%;
 	}
 	#navbar div a.logo {
 		display: block;
 		float: left;
-		height: 50px;
+		height: 40px;
 		margin: 15px 0 0 0 ;
 		padding: 5px;
-		width: 79%;
+		width: 60%;
 	}
 	#navbar div span#mobile-navigation {
 		background: transparent url(../images/mobile/mobile-menu.png) no-repeat;
 		display: block;
 		height: 50px;
-		margin: 6px 0 0 0;
+		margin: 0 0 0 0;
 		padding: 0 0 0 0;
 		position: absolute;
 		right: 3%;
