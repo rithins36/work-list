@@ -690,6 +690,11 @@ img {
 	/* text-decoration: underline; */
 	width: 620px;
 }
+#body.about .body div .mvp_logo{
+	width: 450px;
+	display: block;
+	margin: 0 auto 30px;
+}
 #body.about .body div p {
 	color: #ffffff;
 	display: block;
@@ -708,15 +713,9 @@ img {
 	margin: 20px 0 0;
 	padding: 0;
 	width: min-content;
-}
-#body.about .body div .dates h3 span {
-	display: inline-block;
-	background: linear-gradient(#9c27b0 23.6%, #00bcd4 93.6%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+	overflow: hidden;
 }
 #body.about .body div .dates h3 {
-	display: inline-block;
 	color: #A3A3A3;
 	font-family: audiowide-regular-webfont;
 	font-size: 24px;
@@ -726,6 +725,13 @@ img {
 	text-align: left;
 	text-transform: uppercase;
 	width: 670px;
+	overflow: hidden;
+}
+#body.about .body div .dates h3 span {
+	display: inline-block;
+	background: linear-gradient(#9c27b0 23.6%, #00bcd4 93.6%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 #body.about .body div .icon-row{
 	display: flex;
