@@ -48,13 +48,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 1.8;
-    font-size: larger;
-    font-weight: bolder;
+    line-height: 1.9em;
+    font-size: 1.1em;
     padding: 1em;
     min-width: fit-content;
     font-family: audiowide-regular-webfont;
     color: #fff;
+    
     /*-------------------------------------*/
     background: rgba(255, 255, 255, 0.10);
     border-radius: 20px;
@@ -69,11 +69,13 @@
 
 .two, .three
 {
-    color:rgba(255,255,255,0.6)
+    color:rgba(255,255,255,0.6);
+    
 }
 .one
 {
     font-size: x-large;
+    margin-bottom: 0.7em;
 }
 
 .contact_heading
@@ -88,5 +90,17 @@
     .card
     {
        width:60%;
+    }
+}
+
+
+@media (max-width:380px)
+{
+    .card
+    {
+        font-size: medium;
+        line-height: 1.6em;
+        height:min-content;
+        width:100%;
     }
 }
