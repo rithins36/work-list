@@ -1,8 +1,11 @@
+
+
+
 #contact_body
 {
     background-color: rgba(0,0,0,0.75);
 	margin: 0;
-	min-height: 808px;
+	/*min-height: 808px;*/
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
@@ -39,7 +42,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     ------------------------------------------------------------------------------------*/
-    width:40%;
+    width:35%;
     height:7rem;
     margin:2em;
     display: flex;
@@ -79,3 +82,11 @@
     font-family: audiowide-regular-webfont;
 }
 
+@media (max-width:840px)
+
+{
+    .card
+    {
+       width:60%;
+    }
+}
