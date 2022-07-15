@@ -204,10 +204,12 @@ img {
 	margin: 0 auto;
 	max-width: 960px;
 	overflow: hidden;
-	padding: 20px 0 70px;
+	padding: 0 0 80px;
 }
+
+
 #body .header div h1 {
-	color: #FFFFFF;
+	color: #A3A3A3;
 	display: block;
 	font-family: audiowide-regular-webfont;
 	font-size: 36px;
@@ -219,39 +221,42 @@ img {
 	text-transform: uppercase;
 	width: 940px;
 }
-/* #body .full{
-	background-color: rgba(0,0,0,0.75);
-} */
+#body .header div #rule{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#body .header div #prize{
+	padding-top: 20px;
+	
+}
+#body .header div #task{
+	color:#FFFFFF;
+}
 #body.home .header #logo {
 	margin: 15vh auto;
+	margin-top: 18vh;
     border-radius: 20px;
 	max-width: 800px;
-	background-color: rgba(0,0,0,0.70);
-	/* background: url(../images/bg-transparent1.png) repeat; */
-	/* box-shadow: 5px 10px 18px #888888; */
+	background-color: rgba(0,0,0,0.55);	
 	overflow: hidden;
 	padding:auto;	
 	height: 45vh;
 }
 #body.home .header #logo div{
 	position: relative;
-	/* margin: auto; */
-	/* margin-top: 15px; */
 	height: 50vh;
 	padding: 20px;
+	padding-top: 0;
 }
 #body.home .header #logo div img.ieee25 {
 	display: block;
-	left: 60px;
-	
+	left: 70px;	
 	padding: auto;
 	position: absolute;
-	top: 40px;
-    min-height: 200px;
-	min-width: 200px;
-	height: 200px;
-	/* z-index: 50; */
-	
+	top: 64px;
+    min-height: 180px;
+	min-width: 180px;
+	height: 180px;
 }
 
 #body.home .header #logo div img.mvp {
@@ -261,18 +266,20 @@ img {
 	padding: auto;
 	right: 0px;
 	top: 0px;
+	margin-bottom: 30px;
 	position: absolute;
 	width: 600px;
+	max-height: 300px;
 	height: 300px;
+	
 	/* z-index: 60; */
 }
 #body.home .header #logo div h2 {
 	color:rgb(195, 187, 187);
 	/* display: block; */
 	display: flex;
-	position: absolute;
 	justify-content: center;
-	font-family: Arial;
+	font-family: 'Edu SA Beginner', cursive;
 	font-size: 34px;
 	font-weight: normal;
 	line-height: 43px;
@@ -285,6 +292,7 @@ img {
 	position: absolute;
 	text-align: center;
 	width : fit-content;
+	text-transform: uppercase;
 	/* z-index: 60; */
 }
 #body.home .header div a.more {
@@ -986,16 +994,15 @@ img {
 	width: auto;
 }
 #body .header div h2 {
-	color: #A3A3A3;
+	color: #FFFFFF;
 	display: block;
-	font-family: audiowide-regular-webfont;
-	font-size: 23px;
+	font-family: 'Noto Serif', serif;
+	font-size: 33px;
 	font-weight: normal;
-	line-height: 23px;
+	line-height: 33px;
 	margin: 0 auto;
 	padding: 53px 0 27px;
 	text-align: center;
-	text-transform: uppercase;
 	width: 780px;
 }
 #body .header div p {
@@ -1068,7 +1075,7 @@ img {
 	opacity: 0.7;
 }
 #body .header div .article ul li h1 {
-	color: #A3A3A3;
+	color: #FFFFFF;
 	font-family: audiowide-regular-webfont;
 	font-size: 23px;
 	font-weight: normal;
@@ -1529,7 +1536,7 @@ img {
     bottom: 0;
     padding: 15px;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #fff;
     z-index: 999999;
 	margin-right:20px;
