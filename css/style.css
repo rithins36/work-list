@@ -4,6 +4,7 @@ body {
 	padding: 0;
 	position: relative;
 	width: auto;
+	font-family: "Open Sans", sans-serif;
 }
 body #page {
 	background: url("../img/5039684.jpg") no-repeat scroll center top #000000;
@@ -206,7 +207,28 @@ img {
 	overflow: hidden;
 	padding: 0 0 80px;
 }
-
+#body .header div #rcontent{
+	max-width: fit-content;
+	padding: 0 20px;
+	background: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 20%);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+}
+#body .header div #rcontent ol{
+	
+		display: block;
+		list-style-type: decimal;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 40px;
+		color: #FFFFFF;
+		font-size: 1.7rem;
+		
+	
+}
 
 #body .header div h1 {
 	color: #A3A3A3;
@@ -223,7 +245,7 @@ img {
 }
 #body .header div #rule{
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 #body .header div #prize{
 	padding-top: 20px;
@@ -706,14 +728,18 @@ img {
 #body.about .body div p {
 	color: #ffffff;
 	display: block;
-	font-family: Arial;
-	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
 	font-weight: normal;
-	line-height: 24px;
-	margin: 0;
-	padding: 0 0 px 0;
-	text-align: left;
+	line-height: 1.5;
+	margin: auto;
+	padding: 20px;
+	
 	width: 770px;
+	background: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 20%);
+    border: 2px solid rgba(255, 255, 255, 0.15);
 }
 #body.about .body div .dates {
 	display: flex;
@@ -1001,8 +1027,7 @@ img {
 	font-weight: normal;
 	line-height: 33px;
 	margin: 0 auto;
-	padding: 53px 0 27px;
-	text-align: center;
+	padding: 30px 0 27px;
 	width: 780px;
 }
 #body .header div p {
