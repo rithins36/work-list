@@ -16,8 +16,12 @@
 		display: none;
 	}
 }
-@media only screen and (max-width : 568px) and (orientation : landscape) {
-	
+@media only screen and (min-width:956px) and (max-width : 1045px) {
+
+#navbar div ul li a {
+   padding: 0 15px;
+}
+
 }
 	@media only screen and (max-width : 918px) {
 	#body {
@@ -49,10 +53,10 @@
 	}
 	#body.home .header #logo{
 		max-width: 100vh;
-		width: 91%;
-		height: 45vh;
-		margin: 20vh auto 15vh auto;		
-		padding: 0;
+		width: 84%;
+		height: 30vh;
+		margin: 26vh auto 15vh auto;		
+		padding: 0 0 10px 0;
 	}
 	#body.home .header #logo div {
 		padding: 10px;		
