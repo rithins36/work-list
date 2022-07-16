@@ -176,7 +176,7 @@
 	#body.about .header div h1, #body .header div h1, #body.about .header div p, #body.about .body div h2, #body.about .body div p, #body.about .footer div h2, #body.about .footer div p, #body.about .section div h2, #body.about .section div p, #body .header div ul li div h1, #body .header div ul li div p, #body .header div h2, #body .header div p, #body .header div .sidebar ul li h1, #body .header .contact h2 {
 		float: none;
 		width: 92%;
-		/* margin: 0 5px ; */
+		margin: 0 5px ;
 		padding: 5px 15px;
 		box-sizing: border-box;
 		
@@ -425,5 +425,11 @@
 	#navbar div ul li.selected a, #navbar div ul li.selected a:hover, #navbar div ul li.menu ul#selected li.selected a {
 		color: #eeeced;
 		text-decoration: none;
+	}
+	#body .header div .article ul li h2{
+		padding: 10px;
+		font-size: 18px;
+		margin-left: 15px;
+
 	}
 }
