@@ -272,13 +272,13 @@ img {
 }
 #body.home .header #logo div img.ieee25 {
 	display: block;
-	left: 70px;	
+	left: 80px;	
 	padding: auto;
 	position: absolute;
-	top: 64px;
-    min-height: 180px;
-	min-width: 180px;
-	height: 180px;
+	top: 70px;
+    min-height: 150px;
+	min-width: 150px;
+	height: 150px;
 }
 
 #body.home .header #logo div img.mvp {
