@@ -1108,7 +1108,7 @@ img {
 	margin: 0 0 8px;
 	padding: 0;
 	text-align: left;
-	
+	text-transform: uppercase;
 	width: auto;
 }
 #body .header div .article ul li span {
