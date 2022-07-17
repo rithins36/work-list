@@ -60,7 +60,7 @@
 	}
 	#body.home .header #logo div {
 		padding: 10px;		
-		height: 60vh;
+		height: 40vh;
 		position: relative;
 	}
 	#body.home .header #logo div img.ieee25 {
@@ -86,7 +86,7 @@
 		left: 50%;
 		transform: translate(-50%);
 		float: none;
-		top: 10%;		
+		top: 18%;		
 		width: 45vh;
 		height: 25vh;
 	}
@@ -176,10 +176,12 @@
 	#body.about .header div h1, #body .header div h1, #body.about .header div p, #body.about .body div h2, #body.about .body div p, #body.about .footer div h2, #body.about .footer div p, #body.about .section div h2, #body.about .section div p, #body .header div ul li div h1, #body .header div ul li div p, #body .header div h2, #body .header div p, #body .header div .sidebar ul li h1, #body .header .contact h2 {
 		float: none;
 		width: 92%;
-		margin: 0 5px ;
+		/* margin: 0 5px ; */
 		padding: 5px 15px;
-		box-sizing: border-box;
-		
+		box-sizing: border-box;	
+	}
+	#body .header div #prize{
+		margin-bottom: 10px;
 	}
 #body .header div #rcontent ol{
 	font-size: 1.3rem;
