@@ -1445,6 +1445,45 @@ img {
 #body .header div form input#submit:hover {
 	background-color: #620031;
 }
+/*--------------------------------------leaderboard-styles------------------------------------*/
+#body .leaderboard {
+	display: flex;
+	flex-direction: column;
+}
+
+#body .leaderboard .title {
+	color: #A3A3A3;
+	font-family: audiowide-regular-webfont;
+	font-size: 34px;
+	line-height: 40px;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+#body .leaderboard .table {
+	color: #A3A3A3;
+	font-size: 20px;
+	padding: 0;
+	margin: auto;
+	text-transform: uppercase;
+}
+
+#body .leaderboard .table th {
+	font-size: 30px;
+	text-align: left;
+	border: 1px solid white;
+	font-family: audiowide-regular-webfont;
+	padding: 30px;
+}
+
+#body .leaderboard .table td{
+	padding: 0 30px 0;
+	border: 1px solid white;
+	min-width: 400px;
+}
+
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
 	margin: 0;
