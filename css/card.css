@@ -80,8 +80,9 @@
 
 .contact_heading
 {
-    color:#fff;
+    color: #A3A3A3;
     font-family: audiowide-regular-webfont;
+    text-transform: uppercase;
 }
 
 @media (max-width:840px)
