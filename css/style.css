@@ -321,7 +321,7 @@ img {
 	text-transform: uppercase;
 	/* z-index: 60; */
 }
-#body.home .header div a.more {
+/*#body.home .header div a.more {
 	background-color: #5a5353;
 	color: #a3a3a3;
 	display: flex;
@@ -334,14 +334,14 @@ img {
 	line-height: 49px;
 	margin: auto;
 	top: 360px;
-	/* margin-top: 15px; */
+	margin-top: 15px; 
 	padding: 0;	
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
 	width: 180px;
-	/* z-index: 55; */
-}
+	z-index: 55; 
+ }*/
 #body.home .header div a.more:hover {
 	background-color: #ab000b;
 	color: #ffffff;
