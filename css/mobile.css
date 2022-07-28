@@ -434,4 +434,19 @@
 		margin-left: 15px;
 
 	}
+	#body .leaderboard .title {
+		font-size: 26px;
+	}
+	#body .leaderboard .table th{
+		font-size: 24px;
+	}
+	#body .leaderboard .table td:nth-child(1){
+		min-width: 100px;
+		word-wrap: break-word;
+	}
+	#body .leaderboard .table td:nth-child(2){
+		text-align: center;
+		min-width: 30px;
+		max-width: 30px;
+	}
 }

@@ -1477,15 +1477,27 @@ img {
 #body .leaderboard .table th {
 	font-size: 30px;
 	text-align: left;
-	border: 1px solid white;
 	font-family: audiowide-regular-webfont;
 	padding: 30px;
 }
 
 #body .leaderboard .table td{
-	padding: 0 30px 0;
-	border: 1px solid white;
+	padding: 10px 30px 10px;
+}
+
+#body .leaderboard .table td:nth-child(1){
 	min-width: 400px;
+}
+
+#body .leaderboard .table td:nth-child(2){
+	text-align: center;
+	min-width: 100px;
+	max-width: 100px;
+}
+
+table, td, th {
+	border: 2px solid white;
+	border-collapse: collapse;
 }
 
 /*----------------------------------------footer-styles---------------------------------------*/

@@ -1,14 +1,17 @@
-function loadScores() {
+function loadScoresGSheet() {
 
-let sheetUrl = "https://docs.google.com/spreadsheets/d/1wVi6fbOC1ugtZkUvZY1eaKwXvm5y33FQSOdPjUm4UOk/edit#gid=0";
+  let sheetUrl = "https://docs.google.com/spreadsheets/d/1IBrHZ5zt5EP9TILd-YTCbHVipz6A8dnXheZsF_VcmVc/edit#gid=0";
 
-$('#scores').sheetrock({
-    url: sheetUrl,
-    query: "SELECT B, C WHERE C IS NOT NULL order by C desc",
-    fetchSize: 20,
-    callback: () => {},
-  });
-
+  $('#scores').sheetrock(
+    {
+      url: sheetUrl,
+      query: `SELECT A, B WHERE B IS NOT NULL order by B desc`,
+      fetchSize: 10,
+      labels: ["NAME", "POINTS"],
+      callback: () => {},
+    }
+  );
 }
 
-window.onload = loadScores;
+
+window.onload = loadScoresGSheet;
