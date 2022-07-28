@@ -123,9 +123,12 @@
 	#body.home .header div ul li:first-child, #body.home .header div ul li {
 		border: none;
 		float: none;
-		margin: 0;
+		margin: 60px 0;
 		width: 100%;
 		padding: 0;
+	}
+	#body.home .header div ul li:first-child{
+		margin-top: 0;
 	}
 	#body.home .header div ul li a{
 		margin: 0 auto;
