@@ -15,6 +15,15 @@
 	#body.about .body div .dates h3 span {
 		display: none;
 	}
+	#body .leaderboard .table {
+		margin: auto 20px;
+	}
+	#body .leaderboard .table th{
+		padding: 20px 15px;
+	}
+	#body .leaderboard .table td:nth-child(1){
+		width: 300px;
+	}
 }
 @media only screen and (min-width:956px) and (max-width : 1045px) {
 
@@ -437,6 +446,7 @@
 	#body .leaderboard .title {
 		font-size: 26px;
 	}
+
 	#body .leaderboard .table th{
 		font-size: 24px;
 	}
