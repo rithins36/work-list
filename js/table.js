@@ -14,4 +14,4 @@ function loadScoresGSheet() {
 }
 
 
-window.onload = loadScoresGSheet;
+$(document).ready(loadScoresGSheet);
