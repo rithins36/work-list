@@ -5,13 +5,12 @@ function loadScoresGSheet() {
   $('#scores').sheetrock(
     {
       url: sheetUrl,
-      query: `SELECT A, B WHERE B IS NOT NULL order by B desc`,
-      fetchSize: 10,
+      query: `SELECT A, B WHERE B >= 10 order by B desc`,
       labels: ["NAME", "POINTS"],
       callback: () => {},
     }
   );
-}
+};
 
 
 $(document).ready(loadScoresGSheet);
