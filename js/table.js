@@ -5,7 +5,7 @@ function loadScoresGSheet() {
   $('#scores').sheetrock(
     {
       url: sheetUrl,
-      query: `SELECT A, B WHERE B >= 10 order by B desc`,
+      query: `SELECT A, B WHERE B >= 20 order by B desc`,
       labels: ["NAME", "POINTS"],
       callback: () => {},
     }
